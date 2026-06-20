@@ -1,15 +1,14 @@
 
+-- Configuring done (20.8s)
+CMake Error at vcpkg/scripts/buildsystems/vcpkg.cmake:666 (_add_library):
+  Cannot find source file:
+
+    src/android_driver.cpp
 Call Stack (most recent call first):
-  vcpkg/scripts/buildsystems/vcpkg.cmake:893 (include)
-  CMakeLists.txt:66 (find_package)
-This warning is for project developers.  Use -Wno-dev to suppress it.
+  vita3k/util/CMakeLists.txt:1 (add_library)
 
--- Found Boost: /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/share/boost/BoostConfig.cmake (found version "1.90.0") found components: filesystem
-CMake Error at external/CMakeLists.txt:25 (message):
-  Submodule external/dirent is empty.  Please run: git submodule update
-  --init --recursive
+
+CMake Error at vcpkg/scripts/buildsystems/vcpkg.cmake:666 (_add_library):
+  No SOURCES given to target: util
 Call Stack (most recent call first):
-  external/CMakeLists.txt:31 (check_submodules_present)
-
-
--- Configuring incomplete, errors occurred!
+  vita3k/util/CMakeLists.txt:1 (add_library)
