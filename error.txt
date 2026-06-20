@@ -1,5 +1,15 @@
--- Found Boost: /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/share/boost/BoostConfig.cmake (found suitable version "1.90.0", minimum required is "1.81") found components: filesystem
--- Found Python3: /Users/builder/.pyenv/versions/3.12.7/bin/python3.12 (found version "3.12.7") found components: Interpreter
-CMake Error at vita3k/CMakeLists.txt:234 (target_link_libraries):
-  Cannot specify link libraries for target "vita3k" which is not built by
-  this project.
+
+Call Stack (most recent call first):
+  vcpkg/scripts/buildsystems/vcpkg.cmake:893 (include)
+  CMakeLists.txt:66 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/share/boost/BoostConfig.cmake (found version "1.90.0") found components: filesystem
+CMake Error at external/CMakeLists.txt:25 (message):
+  Submodule external/dirent is empty.  Please run: git submodule update
+  --init --recursive
+Call Stack (most recent call first):
+  external/CMakeLists.txt:31 (check_submodules_present)
+
+
+-- Configuring incomplete, errors occurred!
