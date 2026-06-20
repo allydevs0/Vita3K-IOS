@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.22)
 
-# Configure iOS exclusively as the target
-set(CMAKE_SYSTEM_NAME iOS CACHE STRING "Target iOS" FORCE)
-set(VITA3K_BUILD_IOS ON CACHE BOOL "Build iOS" FORCE)
+# Target iOS exclusively
+set(CMAKE_SYSTEM_NAME iOS)
+set(VITA3K_BUILD_IOS ON CACHE BOOL "Build iOS target exclusively" FORCE)
 
-project(Vita3K)
+project(Vita3K LANGUAGES C CXX OBJC Swift)
 
 # Detects the amount of processors of the host machine and forwards the result to CPU_COUNT
 include(ProcessorCount)
@@ -16,13 +16,7 @@ include("external/dynarmic/CMakeModules/DetectArchitecture.cmake")
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_OSX_DEPLOYMENT_TARGET 11.0)
-
-# Enable Objective-C and Swift for the iOS build
-enable_language(OBJC)
-enable_language(Swift)
-
-option(FORCE_BUILD_OPENSSL_MAC OFF)
+set(CMAKE_OSX_DEPLOYMENT_TARGET 14.0)
 
 if("${CMAKE_CXX_COMPILER_LAUNCHER}" STREQUAL "")
 	find_program(CCACHE_PROGRAM ccache)
@@ -57,12 +51,11 @@ if (NOT (USE_LTO STREQUAL "NEVER"))
 	endif()
 endif()
 
-
 ############################
 ########## Boost ###########
 ############################
 
-# Find standard Boost package from vcpkg
+# Target standard vcpkg boost package
 find_package(Boost REQUIRED COMPONENTS filesystem)
 
 add_subdirectory(external)
