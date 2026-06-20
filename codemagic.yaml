@@ -1,0 +1,62 @@
+workflows:
+  ios-build:
+    name: Build Vita3K iOS
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    environment:
+      groups:
+        - vcpkg_cache
+      vars:
+        VCPKG_FORCE_SYSTEM_BINARIES: "1"
+    cache:
+      cache_paths:
+        - $HOME/.vcpkg
+        - vcpkg/downloads
+        - vcpkg/installed
+    scripts:
+      - name: Checkout Submodules
+        script: |
+          git submodule update --init --recursive
+      - name: Install Dependencies
+        script: |
+          brew install cmake ninja ccache
+      - name: Set up build environment
+        script: |
+          bash ./.ci/setup-macos.sh
+      - name: Setup VCPKG
+        script: |
+          git clone https://github.com/microsoft/vcpkg.git
+          ./vcpkg/bootstrap-vcpkg.sh
+          ./vcpkg/vcpkg install --triplet arm64-ios
+      - name: Configure CMake for iOS
+        script: |
+          mkdir build-ios
+          cd build-ios
+          sed -i '' 's/include(CPackConfig.txt)//g' ../external/capstone/CMakeLists.txt || true
+          cmake .. -G Ninja \
+            -DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake \
+            -DVCPKG_TARGET_TRIPLET=arm64-ios \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_SYSTEM_PROCESSOR=arm64 \
+            -DCMAKE_OSX_SYSROOT=$(xcrun --sdk iphoneos --show-sdk-path) \
+            -DCMAKE_OSX_ARCHITECTURES=arm64 \
+            -DCMAKE_Swift_COMPILER_TARGET=arm64-apple-ios14.0 \
+            -DCMAKE_Swift_FLAGS="-sdk $(xcrun --sdk iphoneos --show-sdk-path) -target arm64-apple-ios14.0" \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=14.0 \
+            -DVITA3K_BUILD_IOS=ON \
+            -DUSE_UNICORN_CPU=OFF \
+            -DVITA3K_FORCE_SYSTEM_BOOST=ON
+      - name: Build iOS App
+        script: |
+          cd build-ios
+          cmake --build . --config Release --target vita3k-ios
+      - name: Prepare App Bundle
+        script: |
+          mkdir -p artifacts/ios-app
+          cp -r build-ios/Release-iphoneos/vita3k-ios.app artifacts/ios-app/ || echo "App bundle missing"
+          cd artifacts
+          zip -r vita3k-ios-app.zip ios-app/
+    artifacts:
+      - artifacts/vita3k-ios-app.zip
+      - build-ios/CMakeFiles/CMakeError.log
+      - build-ios/CMakeFiles/CMakeOutput.log
