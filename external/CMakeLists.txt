@@ -7,29 +7,6 @@ include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
 # created or updated and is ignored if it exists.
 set(CMAKE_POLICY_DEFAULT_CMP0077 "NEW")
 
-function(check_submodules_present)
-	file(READ "${CMAKE_SOURCE_DIR}/.gitmodules" gitmodules)
-	string(REGEX MATCHALL "path *= *[^ \t\r\n]*" gitmodules ${gitmodules})
-
-	foreach(module ${gitmodules})
-		# Get module name
-		string(REGEX REPLACE "path *= *" "" module ${module})
-
-		# Stat the folder and get amount of entries
-		file(GLOB RESULT "${CMAKE_SOURCE_DIR}/${module}/*")
-		list(LENGTH RESULT RES_LEN)
-
-		# If the module has no files, bring fatal error
-		if(RES_LEN EQUAL 0)
-			# directory is empty
-			message(FATAL_ERROR "Submodule ${module} is empty. "
-				"Please run: git submodule update --init --recursive")
-		endif()
-	endforeach()
-endfunction()
-
-check_submodules_present()
-
 # Set folder for external projects (for project tree in IDE)
 set(CMAKE_FOLDER externals)
 

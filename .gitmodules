@@ -1,13 +1,6 @@
-[submodule "external/boost"]
-	path = external/boost
-	url = https://github.com/Vita3K/ext-boost
 [submodule "external/capstone"]
 	path = external/capstone
 	url = https://github.com/aquynh/capstone.git
-[submodule "external/dirent"]
-	path = external/dirent
-	url = https://github.com/tronkko/dirent
-	branch = v1.23
 [submodule "external/dlmalloc"]
 	path = external/dlmalloc
 	url = https://github.com/Vita3K/dlmalloc
@@ -17,9 +10,6 @@
 [submodule "external/glslang"]
 	path = external/glslang
 	url = https://github.com/KhronosGroup/glslang
-[submodule "external/googletest"]
-	path = external/googletest
-	url = https://github.com/google/googletest
 [submodule "external/libfat16"]
 	path = external/libfat16
 	url = https://github.com/Vita3K/libfat16
@@ -66,21 +56,24 @@
 [submodule "external/LibAtrac9"]
 	path = external/LibAtrac9
 	url = https://github.com/Vita3K/LibAtrac9.git
-[submodule "external/tracy"]
-	path = external/tracy
-	url = https://github.com/wolfpld/tracy.git
-[submodule "external/nativefiledialog-extended"]
-	path = external/nativefiledialog-extended
-	url = https://github.com/btzy/nativefiledialog-extended.git
 [submodule "external/cubeb"]
 	path = external/cubeb
 	url = https://github.com/mozilla/cubeb.git
 [submodule "external/concurrentqueue"]
 	path = external/concurrentqueue
 	url = https://github.com/cameron314/concurrentqueue.git
-[submodule "external/libadrenotools"]
-	path = external/libadrenotools
-	url = https://github.com/bylaws/libadrenotools
 [submodule "external/substitute"]
 	path = external/substitute
 	url = https://github.com/Vita3K/substitute.git
+[submodule "external/CppCommon"]
+	path = external/CppCommon
+	url = https://github.com/chronoxor/CppCommon.git
+[submodule "external/miniz"]
+	path = external/miniz
+	url = https://github.com/richgel999/miniz.git
+[submodule "external/ddspp"]
+	path = external/ddspp
+	url = https://github.com/rosieks/ddspp.git
+[submodule "external/cli11"]
+	path = external/cli11
+	url = https://github.com/CLIUtils/CLI11.git
