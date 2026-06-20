@@ -102,7 +102,7 @@ if(NOT MSVC)
 	add_compile_options(-Wformat -Werror=format-security)
 endif()
 
-if(NOT ANDROID)
+if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	include(${CMAKE_SOURCE_DIR}/cmake/qt6.cmake)
 endif()
 
@@ -120,7 +120,7 @@ add_subdirectory(display)
 add_subdirectory(features)
 add_subdirectory(glutil)
 add_subdirectory(updater)
-if(NOT ANDROID)
+if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	add_subdirectory(gui-qt)
 endif()
 add_subdirectory(gxm)
@@ -234,7 +234,7 @@ if(USE_DISCORD_RICH_PRESENCE)
 	target_link_libraries(vita3k PRIVATE discord-rpc)
 endif()
 
-if(NOT ANDROID)
+if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	file(GLOB VITA3K_QT_TS_FILES CONFIGURE_DEPENDS
 		"${CMAKE_SOURCE_DIR}/i18n/qt/*.ts")
 	set(VITA3K_QT_QM_DIR "${CMAKE_BINARY_DIR}/qt_translations")
@@ -269,7 +269,7 @@ endif()
 
 set_target_properties(vita3k PROPERTIES OUTPUT_NAME Vita3K)
 
-if(NOT ANDROID)
+if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	set_target_properties(vita3k PROPERTIES
 		ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
 		LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
