@@ -33,7 +33,7 @@ jobs:
         run: |
           git clone https://github.com/microsoft/vcpkg.git
           ./vcpkg/bootstrap-vcpkg.sh
-          ./vcpkg/vcpkg install --triplet arm64-ios
+          ./vcpkg/vcpkg install --triplet arm64-ios || (echo "=== VCPKG BUILD ERROR LOG ===" && cat ./vcpkg/buildtrees/*/*.log && exit 1)
 
       - name: Configure CMake for iOS
         run: |
