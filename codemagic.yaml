@@ -4,6 +4,8 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m1
     environment:
+      xcode: latest
+      cocoapods: default
       groups:
         - vcpkg_cache
       vars:
@@ -20,9 +22,6 @@ workflows:
       - name: Install Dependencies
         script: |
           brew install cmake ninja ccache
-      - name: Set up build environment
-        script: |
-          bash ./.ci/setup-macos.sh
       - name: Setup VCPKG
         script: |
           git clone https://github.com/microsoft/vcpkg.git
