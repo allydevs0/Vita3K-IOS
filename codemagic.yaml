@@ -45,6 +45,7 @@ workflows:
             -DVITA3K_BUILD_IOS=ON \
             -DUSE_UNICORN_CPU=OFF \
             -DVITA3K_FORCE_SYSTEM_BOOST=ON \
+            -DCAPSTONE_BUILD_MACOS_THIN=ON \
             -DCMAKE_CXX_FLAGS="-Wno-deprecated-declarations"
       - name: Build iOS App
         script: |
