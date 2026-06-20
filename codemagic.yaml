@@ -48,11 +48,11 @@ workflows:
       - name: Build iOS App
         script: |
           cd build-ios
-          cmake --build . --config Release --target vita3k-ios
+          cmake --build . --config Release --target vita3k
       - name: Prepare App Bundle
         script: |
           mkdir -p artifacts/ios-app
-          cp -r build-ios/Release-iphoneos/vita3k-ios.app artifacts/ios-app/ || echo "App bundle missing"
+          cp -r build-ios/Release-iphoneos/vita3k.app artifacts/ios-app/ || echo "App bundle missing"
           cd artifacts
           zip -r vita3k-ios-app.zip ios-app/
     artifacts:
