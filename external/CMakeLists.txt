@@ -79,7 +79,9 @@ set(BUNDLE_SPEEX TRUE CACHE BOOL "Bundle the speex library")
 set(LAZY_LOAD_LIBS TRUE CACHE BOOL "Lazily load shared libraries")
 set(USE_SANITIZERS FALSE CACHE BOOL "Dont't use sanitizers")
 
-add_subdirectory(cubeb EXCLUDE_FROM_ALL)
+if (NOT VITA3K_BUILD_IOS)
+    add_subdirectory(cubeb EXCLUDE_FROM_ALL)
+endif()
 
 if (ARCHITECTURE STREQUAL "arm64")
 	target_compile_definitions(speex PUBLIC
