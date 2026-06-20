@@ -26,6 +26,9 @@ set(CMAKE_OSX_DEPLOYMENT_TARGET 11.0)
 # https://gitlab.kitware.com/cmake/cmake/-/issues/24104
 if(APPLE)
     enable_language(OBJC)
+    if(VITA3K_BUILD_IOS)
+        enable_language(Swift)
+    endif()
 endif()
 
 if(ANDROID)

@@ -200,6 +200,19 @@ if(ANDROID)
 		endforeach()
 		set_target_properties(vita3k PROPERTIES LINK_FLAGS "${LIBS_TO_EXCLUDE_FLAG}")
 	endif()
+elseif(VITA3K_BUILD_IOS)
+	add_executable(vita3k-ios MACOSX_BUNDLE
+		ios/AppDelegate.swift
+		ios/ViewController.swift
+		main.cpp interface.cpp interface.h performance.cpp
+	)
+	set_target_properties(vita3k-ios PROPERTIES
+		MACOSX_BUNDLE_GUI_IDENTIFIER "com.allydevs0.Vita3K"
+		MACOSX_BUNDLE_BUNDLE_NAME "Vita3K"
+		XCODE_ATTRIBUTE_ENABLE_BITCODE "NO"
+		OUTPUT_NAME "vita3k"
+	)
+	target_link_libraries(vita3k-ios PRIVATE "-framework UIKit" "-framework Foundation" "-framework QuartzCore" "-framework Metal")
 else()
 	add_executable(vita3k MACOSX_BUNDLE main.cpp interface.cpp interface.h performance.cpp)
 endif()
@@ -209,8 +222,12 @@ if(WIN32)
 	target_sources(vita3k PRIVATE util/src/vc_runtime_checker.cpp)
 endif()
 
-target_link_libraries(vita3k PRIVATE app audio compat config cppcommon ctrl dialog display ime lang gdbstub gxm io miniz modules motion packages patch renderer shader touch util psvpfsparser)
-if(NOT ANDROID)
+if(VITA3K_BUILD_IOS)
+	target_link_libraries(vita3k-ios PRIVATE app audio compat config cppcommon ctrl dialog display ime lang gdbstub gxm io miniz modules motion packages patch renderer shader touch util psvpfsparser)
+else()
+	target_link_libraries(vita3k PRIVATE app audio compat config cppcommon ctrl dialog display ime lang gdbstub gxm io miniz modules motion packages patch renderer shader touch util psvpfsparser)
+endif()
+if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	target_link_libraries(vita3k PRIVATE gui-qt)
 endif()
 if(USE_DISCORD_RICH_PRESENCE)
