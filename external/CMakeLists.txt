@@ -36,6 +36,7 @@ set(CMAKE_FOLDER externals)
 option(BUILD_SHARED_LIBS "Build shared library" OFF)
 option(CAPSTONE_ARCHITECTURE_DEFAULT "Whether architectures are enabled by default" OFF)
 option(CAPSTONE_ARM_SUPPORT "ARM support" ON)
+set(CAPSTONE_BUILD_PACKAGING OFF CACHE BOOL "" FORCE)
 add_subdirectory(capstone EXCLUDE_FROM_ALL)
 
 add_library(dirent INTERFACE)

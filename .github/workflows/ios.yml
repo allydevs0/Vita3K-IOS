@@ -50,6 +50,7 @@ jobs:
             -DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake \
             -DVCPKG_TARGET_TRIPLET=arm64-ios \
             -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_SYSTEM_PROCESSOR=arm64 \
             -DCMAKE_OSX_SYSROOT=$(xcrun --sdk iphoneos --show-sdk-path) \
             -DCMAKE_OSX_ARCHITECTURES=arm64 \
             -DCMAKE_Swift_COMPILER_TARGET=arm64-apple-ios14.0 \
