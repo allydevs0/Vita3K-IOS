@@ -230,7 +230,7 @@ endif()
 if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	target_link_libraries(vita3k PRIVATE gui-qt)
 endif()
-if(USE_DISCORD_RICH_PRESENCE)
+if(USE_DISCORD_RICH_PRESENCE AND NOT VITA3K_BUILD_IOS)
 	target_link_libraries(vita3k PRIVATE discord-rpc)
 endif()
 
@@ -267,7 +267,9 @@ if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 		COMMENT "Updating Qt translation source file")
 endif()
 
-set_target_properties(vita3k PROPERTIES OUTPUT_NAME Vita3K)
+if(NOT VITA3K_BUILD_IOS)
+	set_target_properties(vita3k PROPERTIES OUTPUT_NAME Vita3K)
+endif()
 
 if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 	set_target_properties(vita3k PROPERTIES
@@ -276,7 +278,7 @@ if(NOT ANDROID AND NOT VITA3K_BUILD_IOS)
 		RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 endif()
 
-if(APPLE)
+if(APPLE AND NOT VITA3K_BUILD_IOS)
 	add_custom_command(
 		OUTPUT Vita3K.icns
 		COMMAND mkdir -p Vita3K.iconset
@@ -425,7 +427,7 @@ elseif(ANDROID)
 	)
 endif()
 
-if(TRACY_ENABLE_ON_CORE_COMPONENTS)
+if(TRACY_ENABLE_ON_CORE_COMPONENTS AND NOT VITA3K_BUILD_IOS)
 	# Enable Tracy profiling on the main compilation target
 	target_link_libraries(vita3k PRIVATE tracy)
 endif()
