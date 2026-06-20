@@ -16,6 +16,7 @@ workflows:
         - $HOME/.vcpkg
         - vcpkg/downloads
         - vcpkg/installed
+        - $HOME/Library/Caches/ccache
     scripts:
       - name: Set up code signing
         script: |
