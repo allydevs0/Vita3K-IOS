@@ -8,6 +8,7 @@ workflows:
       cocoapods: default
       groups:
         - vcpkg_cache
+        - codemagic-signing
       vars:
         VCPKG_FORCE_SYSTEM_BINARIES: "1"
     cache:
@@ -16,6 +17,11 @@ workflows:
         - vcpkg/downloads
         - vcpkg/installed
     scripts:
+      - name: Set up code signing
+        script: |
+          keychain initialize
+          keychain add-certificates --certificate-password $CM_CERTIFICATE_PASSWORD
+          keychain use-login
       - name: Checkout Submodules
         script: |
           git submodule update --init --recursive
@@ -57,13 +63,13 @@ workflows:
           exit $BUILD_EXIT
       - name: Prepare App Bundle
         script: |
-          mkdir -p artifacts/ios-app
-          cp -r build-ios/Release-iphoneos/VitaiOS.app artifacts/ios-app/ || \
-          cp -r build-ios/vita3k/Release-iphoneos/VitaiOS.app artifacts/ios-app/ || echo "App bundle missing"
+          mkdir -p artifacts/Payload
+          cp -r build-ios/Release-iphoneos/VitaiOS.app artifacts/Payload/ || \
+          cp -r build-ios/vita3k/Release-iphoneos/VitaiOS.app artifacts/Payload/ || echo "App bundle missing"
           cd artifacts
-          zip -r vita3k-ios-app.zip ios-app/
+          zip -r vita3k-ios-app.ipa Payload/
     artifacts:
-      - artifacts/vita3k-ios-app.zip
+      - artifacts/vita3k-ios-app.ipa
       - build-ios/CMakeFiles/CMakeError.log
       - build-ios/CMakeFiles/CMakeOutput.log
       - build-ios/build.log
