@@ -32,6 +32,7 @@ workflows:
           mkdir build-ios
           cd build-ios
           sed -i '' 's/include(CPackConfig.txt)//g' ../external/capstone/CMakeLists.txt || true
+          sed -i '' 's/set(CMAKE_OSX_ARCHITECTURES "x86_64;arm64")/set(CMAKE_OSX_ARCHITECTURES "arm64")/g' ../external/capstone/CMakeLists.txt || true
           cmake .. -G Ninja \
             -DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake \
             -DVCPKG_TARGET_TRIPLET=arm64-ios \
