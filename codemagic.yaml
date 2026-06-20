@@ -52,7 +52,8 @@ workflows:
       - name: Prepare App Bundle
         script: |
           mkdir -p artifacts/ios-app
-          cp -r build-ios/Release-iphoneos/vita3k.app artifacts/ios-app/ || echo "App bundle missing"
+          cp -r build-ios/Release-iphoneos/VitaiOS.app artifacts/ios-app/ || \
+          cp -r build-ios/vita3k/Release-iphoneos/VitaiOS.app artifacts/ios-app/ || echo "App bundle missing"
           cd artifacts
           zip -r vita3k-ios-app.zip ios-app/
     artifacts:
