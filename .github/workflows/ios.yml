@@ -46,6 +46,7 @@ jobs:
         run: |
           mkdir build-ios
           cd build-ios
+          sed -i '' 's/include(CPackConfig.txt)//g' ../external/capstone/CMakeLists.txt
           cmake .. -G Ninja \
             -DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake \
             -DVCPKG_TARGET_TRIPLET=arm64-ios \
