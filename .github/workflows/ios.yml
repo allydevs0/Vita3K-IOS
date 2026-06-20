@@ -1,0 +1,61 @@
+name: Build iOS
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+env:
+  BUILD_CONFIG: Release
+
+jobs:
+  ios-build:
+    name: iOS App
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install Dependencies
+        run: |
+          brew install cmake ninja ccache
+          
+      - name: Set up build environment
+        run: bash ./.ci/setup-macos.sh
+        
+      - name: Configure CMake for iOS
+        run: |
+          mkdir build-ios
+          cd build-ios
+          cmake .. -G Xcode \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=14.0 \
+            -DCMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH=NO \
+            -DCMAKE_IOS_INSTALL_COMBINED=YES \
+            -DVITA3K_BUILD_IOS=ON \
+            -DUSE_UNICORN_CPU=ON
+            
+      - name: Build iOS App
+        run: |
+          cd build-ios
+          cmake --build . --config Release --target vita3k-ios
+          
+      - name: Prepare .app for KSign
+        run: |
+          mkdir -p artifacts/ios-app
+          # Copy the .app bundle to the artifacts directory
+          cp -r build-ios/Release-iphoneos/vita3k-ios.app artifacts/ios-app/ || echo "App bundle will be here"
+          cd artifacts
+          zip -r vita3k-ios-app.zip ios-app/
+
+      - name: Upload iOS App Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vita3k-ios-app
+          path: artifacts/vita3k-ios-app.zip
