@@ -16,7 +16,7 @@ include("external/dynarmic/CMakeModules/DetectArchitecture.cmake")
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_OSX_DEPLOYMENT_TARGET 11.0)
+set(CMAKE_OSX_DEPLOYMENT_TARGET 14.0)
 
 # Enable Objective-C and Swift for the iOS build
 enable_language(OBJC)
