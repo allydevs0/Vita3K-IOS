@@ -5,6 +5,9 @@
   "dependencies": [
     "boost-filesystem",
     "boost-system",
+    "boost-variant",
+    "boost-algorithm",
+    "boost-icl",
     "curl",
     "openssl",
     "zlib"

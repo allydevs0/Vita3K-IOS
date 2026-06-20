@@ -1,14 +1,940 @@
 
--- Configuring done (20.8s)
-CMake Error at vcpkg/scripts/buildsystems/vcpkg.cmake:666 (_add_library):
-  Cannot find source file:
+[0/2] Re-checking globbed directories...
+[1/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_rem_pio2.c.o
+[2/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_fmod.c.o
+[3/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_pow.c.o
+[4/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_exp.c.o
+[5/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_log10.c.o
+[6/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_log.c.o
+[7/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_atan2.c.o
+[8/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/cmake_pch.h.pch
+[9/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_sqrt.c.o
+[10/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_cos.c.o
+[11/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_tan.c.o
+[12/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_copysign.c.o
+[13/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_rem_pio2.c.o
+[14/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_atan.c.o
+[15/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_cos.c.o
+[16/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_sin.c.o
+[17/1007] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[18/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_fabs.c.o
+[19/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isnanf.c.o
+[20/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isnan.c.o
+[21/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_floor.c.o
+[22/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_modf.c.o
+[23/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_scalbn.c.o
+[24/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isinff.c.o
+[25/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isinf.c.o
+[26/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_sin.c.o
+[27/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_tan.c.o
+[28/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_assert.c.o
+[29/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL.c.o
+[30/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_error.c.o
+[31/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_guid.c.o
+[32/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_hashtable.c.o
+[33/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_hints.c.o
+[34/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_list.c.o
+[35/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_log.c.o
+[36/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_properties.c.o
+[37/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_utils.c.o
+[38/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/atomic/SDL_atomic.c.o
+[39/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/atomic/SDL_spinlock.c.o
+[40/1007] Building CXX object external/dynarmic/externals/mcl/src/CMakeFiles/mcl.dir/assert.cpp.o
+[41/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audiodev.c.o
+[42/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audiocvt.c.o
+[43/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audio.c.o
+[44/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audioqueue.c.o
+[45/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audiotypecvt.c.o
+[46/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audioresample.c.o
+[47/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_mixer.c.o
+[48/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/core/SDL_core_unsupported.c.o
+[49/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_wave.c.o
+[50/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/camera/SDL_camera.c.o
+[51/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/cpuinfo/SDL_cpuinfo.c.o
+[52/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_categories.c.o
+[53/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_clipboardevents.c.o
+[54/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_displayevents.c.o
+[55/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dynapi/SDL_dynapi.c.o
+[56/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_dropevents.c.o
+[57/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_eventwatch.c.o
+[58/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_events.c.o
+[59/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keyboard.c.o
+[60/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keymap.c.o
+[61/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keysym_to_keycode.c.o
+[62/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keysym_to_scancode.c.o
+[63/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_pen.c.o
+[64/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_quit.c.o
+[65/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_mouse.c.o
+[66/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_scancode_tables.c.o
+[67/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_touch.c.o
+[68/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_windowevents.c.o
+[69/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/imKStoUCS.c.o
+[70/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/filesystem/SDL_filesystem.c.o
+[71/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/haptic/SDL_haptic.c.o
+[72/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/gpu/SDL_gpu.c.o
+[73/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/hidapi/SDL_hidapi.c.o
+[74/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/io/SDL_asyncio.c.o
+[75/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/io/generic/SDL_asyncio_generic.c.o
+[76/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[77/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/io/SDL_iostream.c.o
+[78/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
+[79/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/controller_type.c.o
+[80/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/SDL_gamepad.c.o
+[81/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/main/SDL_main_callbacks.c.o
+[82/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/SDL_joystick.c.o
+[83/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/locale/SDL_locale.c.o
+[84/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/main/SDL_runapp.c.o
+[85/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o
+[86/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/misc/SDL_url.c.o
+[87/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/power/SDL_power.c.o
+[88/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[89/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[90/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/SDL_render_unsupported.c.o
+[91/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/SDL_yuv_sw.c.o
+[92/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d/SDL_render_d3d.c.o
+[93/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o
+[94/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o
+[95/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[96/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
+[97/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d12/SDL_render_d3d12.c.o
+[98/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
+[99/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengl/SDL_render_gl.c.o
+[100/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengl/SDL_shaders_gl.c.o
+[101/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/gpu/SDL_shaders_gpu.c.o
+[102/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/gpu/SDL_pipeline_gpu.c.o
+[103/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o
+[104/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/ps2/SDL_render_ps2.c.o
+[105/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/gpu/SDL_render_gpu.c.o
+[106/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/psp/SDL_render_psp.c.o
+[107/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_drawpoint.c.o
+[108/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_drawline.c.o
+[109/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_blendpoint.c.o
+[110/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/SDL_render.c.o
+[111/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_render_sw.c.o
+[112/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengles2/SDL_render_gles2.c.o
+[113/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
+[114/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
+[115/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
+[116/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_rotate.c.o
+[117/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vulkan/SDL_shaders_vulkan.c.o
+[118/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_crc16.c.o
+[119/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/sensor/SDL_sensor.c.o
+[120/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_crc32.c.o
+[121/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_triangle.c.o
+[122/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_getenv.c.o
+[123/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_blendfillrect.c.o
+[124/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_iconv.c.o
+[125/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_memcpy.c.o
+[126/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_memmove.c.o
+[127/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_malloc.c.o
+[128/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_memset.c.o
+[129/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_mslibc.c.o
+[130/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_murmur3.c.o
+[131/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_random.c.o
+[132/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_stdlib.c.o
+[133/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_strtokr.c.o
+[134/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_qsort.c.o
+[135/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/storage/SDL_storage.c.o
+[136/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/SDL_thread.c.o
+[137/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/time/SDL_time.c.o
+[138/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vulkan/SDL_render_vulkan.c.o
+[139/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_string.c.o
+[140/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/timer/SDL_timer.c.o
+[141/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit.c.o
+[142/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_copy.c.o
+[143/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_1.c.o
+[144/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_0.c.o
+[145/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_RLEaccel.c.o
+[146/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_blendline.c.o
+[147/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_N.c.o
+[148/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_bmp.c.o
+[149/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_egl.c.o
+[150/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_fillrect.c.o
+[151/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_clipboard.c.o
+[152/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_slow.c.o
+[153/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_A.c.o
+[154/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_rect.c.o
+[155/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_stretch.c.o
+[156/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_pixels.c.o
+[157/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_video_unsupported.c.o
+[158/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.o
+[159/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/yuv2rgb/yuv_rgb_sse.c.o
+[160/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_vulkan_utils.c.o
+[161/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_surface.c.o
+[162/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/dummy/SDL_dummyaudio.c.o
+[163/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/disk/SDL_diskaudio.c.o
+[164/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/camera/dummy/SDL_camera_dummy.c.o
+[165/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_yuv.c.o
+[166/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/loadso/dlopen/SDL_sysloadso.c.o
+[167/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/dummy/SDL_nullevents.c.o
+[168/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
+[169/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/dummy/SDL_nullvideo.c.o
+[170/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/dummy/SDL_nullframebuffer.c.o
+[171/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_stb.c.o
+[172/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_video.c.o
+[173/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/yuv2rgb/yuv_rgb_std.c.o
+[174/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
+[175/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
+[176/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
+[177/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
+[178/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o
+[179/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o
+[180/1007] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[181/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o
+[182/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_shield.c.o
+[183/1007] Linking CXX static library external/fmt/libfmt.a
+[184/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
+[185/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_steam_hori.c.o
+[186/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
+[187/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
+[188/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_auto.c.o
+[189/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
+[190/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
+[191/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
+[192/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
+[193/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
+[194/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/haptic/dummy/SDL_syshaptic.c.o
+[195/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
+[196/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/time/unix/SDL_systime.c.o
+[197/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/misc/ios/SDL_sysurl.m.o
+[198/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/camera/coremedia/SDL_camera_coremedia.m.o
+[199/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/main/ios/SDL_sysmain_callbacks.m.o
+[200/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/timer/unix/SDL_systimer.c.o
+[201/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/storage/generic/SDL_genericstorage.c.o
+[202/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/coreaudio/SDL_coreaudio.m.o
+[203/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/filesystem/posix/SDL_sysfsops.c.o
+[204/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/hidapi/ios/hid.m.o
+[205/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/locale/macos/SDL_syslocale.m.o
+[206/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[207/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/sensor/coremotion/SDL_coremotionsensor.m.o
+[208/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/filesystem/cocoa/SDL_sysfilesystem.m.o
+[209/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/power/uikit/SDL_syspower.m.o
+[210/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitclipboard.m.o
+[211/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitmessagebox.m.o
+[212/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitappdelegate.m.o
+[213/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitevents.m.o
+[214/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/apple/SDL_mfijoystick.m.o
+[215/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitmetalview.m.o
+[216/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitopenglview.m.o
+[217/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitopengles.m.o
+[218/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitmodes.m.o
+[219/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_systhread.c.o
+[220/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_sysmutex.c.o
+[221/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_sysrwlock.c.o
+[222/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_syscond.c.o
+[223/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_systls.c.o
+[224/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_syssem.c.o
+[225/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dialog/SDL_dialog.c.o
+[226/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dialog/SDL_dialog_utils.c.o
+[227/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/process/SDL_process.c.o
+[228/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/process/posix/SDL_posixprocess.c.o
+[229/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitpen.m.o
+[230/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenevents.c.o
+[231/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
+[232/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenopengles.c.o
+[233/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitvideo.m.o
+[234/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenvideo.c.o
+[235/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitview.m.o
+[236/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitviewcontroller.m.o
+[237/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenvulkan.c.o
+[238/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenwindow.c.o
+[239/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dialog/dummy/SDL_dummydialog.c.o
+[240/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/tray/dummy/SDL_tray.c.o
+[241/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/tray/SDL_tray_utils.c.o
+[242/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitwindow.m.o
+[243/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitvulkan.m.o
+[244/1007] Linking C static library external/sdl/libSDL_uclibc.a
+[245/1007] Linking CXX static library external/dynarmic/externals/mcl/src/libmcl.a
+[246/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/a32_jitstate.cpp
+[247/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/abi.cpp
+[248/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/arm.cpp.o
+[249/1007] Linking CXX static library external/spdlog/libspdlog.a
+[250/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/address_space.cpp
+[251/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64.cpp
+[252/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a32.cpp
+[253/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a32_coprocessor.cpp
+[254/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/instrset_detect.cpp.o
+[255/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a32_memory.cpp
+[256/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a64.cpp
+[257/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a64_memory.cpp
+[258/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_data_processing.cpp
+[259/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_cryptography.cpp
+[260/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_floating_point.cpp
+[261/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_memory.cpp
+[262/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_packed.cpp
+[263/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_saturation.cpp
+[264/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_vector.cpp
+[265/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_vector_floating_point.cpp
+[266/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_vector_saturation.cpp
+[267/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/fpsr_manager.cpp
+[268/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/exclusive_monitor.cpp
+[269/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/reg_alloc.cpp
+[270/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/verbose_debugging_output.cpp
+[271/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/a32_address_space.cpp
+[272/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/common/spin_lock_arm64.cpp
+[273/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/a32_interface.cpp
+[274/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/tracy.cpp.o
+[275/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/gpu/metal/SDL_gpu_metal.m.o
+[276/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/render/metal/SDL_render_metal.m.o
+[277/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/hash.cpp.o
+[0/2] Re-checking globbed directories...
+[1/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_rem_pio2.c.o
+[2/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_fmod.c.o
+[3/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_pow.c.o
+[4/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_exp.c.o
+[5/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_log10.c.o
+[6/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_log.c.o
+[7/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_atan2.c.o
+[8/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/cmake_pch.h.pch
+[9/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/e_sqrt.c.o
+[10/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_cos.c.o
+[11/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_tan.c.o
+[12/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_copysign.c.o
+[13/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_rem_pio2.c.o
+[14/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_atan.c.o
+[15/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_cos.c.o
+[16/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/k_sin.c.o
+[17/1007] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[18/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_fabs.c.o
+[19/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isnanf.c.o
+[20/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isnan.c.o
+[21/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_floor.c.o
+[22/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_modf.c.o
+[23/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_scalbn.c.o
+[24/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isinff.c.o
+[25/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_isinf.c.o
+[26/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_sin.c.o
+[27/1007] Building C object external/sdl/CMakeFiles/SDL_uclibc.dir/src/libm/s_tan.c.o
+[28/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_assert.c.o
+[29/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL.c.o
+[30/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_error.c.o
+[31/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_guid.c.o
+[32/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_hashtable.c.o
+[33/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_hints.c.o
+[34/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_list.c.o
+[35/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_log.c.o
+[36/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_properties.c.o
+[37/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/SDL_utils.c.o
+[38/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/atomic/SDL_atomic.c.o
+[39/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/atomic/SDL_spinlock.c.o
+[40/1007] Building CXX object external/dynarmic/externals/mcl/src/CMakeFiles/mcl.dir/assert.cpp.o
+[41/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audiodev.c.o
+[42/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audiocvt.c.o
+[43/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audio.c.o
+[44/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audioqueue.c.o
+[45/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audiotypecvt.c.o
+[46/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_audioresample.c.o
+[47/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_mixer.c.o
+[48/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/core/SDL_core_unsupported.c.o
+[49/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/SDL_wave.c.o
+[50/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/camera/SDL_camera.c.o
+[51/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/cpuinfo/SDL_cpuinfo.c.o
+[52/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_categories.c.o
+[53/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_clipboardevents.c.o
+[54/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_displayevents.c.o
+[55/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dynapi/SDL_dynapi.c.o
+[56/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_dropevents.c.o
+[57/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_eventwatch.c.o
+[58/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_events.c.o
+[59/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keyboard.c.o
+[60/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keymap.c.o
+[61/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keysym_to_keycode.c.o
+[62/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_keysym_to_scancode.c.o
+[63/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_pen.c.o
+[64/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_quit.c.o
+[65/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_mouse.c.o
+[66/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_scancode_tables.c.o
+[67/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_touch.c.o
+[68/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/SDL_windowevents.c.o
+[69/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/events/imKStoUCS.c.o
+[70/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/filesystem/SDL_filesystem.c.o
+[71/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/haptic/SDL_haptic.c.o
+[72/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/gpu/SDL_gpu.c.o
+[73/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/hidapi/SDL_hidapi.c.o
+[74/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/io/SDL_asyncio.c.o
+[75/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/io/generic/SDL_asyncio_generic.c.o
+[76/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[77/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/io/SDL_iostream.c.o
+[78/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
+[79/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/controller_type.c.o
+[80/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/SDL_gamepad.c.o
+[81/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/main/SDL_main_callbacks.c.o
+[82/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/SDL_joystick.c.o
+[83/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/locale/SDL_locale.c.o
+[84/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/main/SDL_runapp.c.o
+[85/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o
+[86/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/misc/SDL_url.c.o
+[87/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/power/SDL_power.c.o
+[88/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[89/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[90/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/SDL_render_unsupported.c.o
+[91/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/SDL_yuv_sw.c.o
+[92/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d/SDL_render_d3d.c.o
+[93/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o
+[94/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o
+[95/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[96/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
+[97/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d12/SDL_render_d3d12.c.o
+[98/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
+[99/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengl/SDL_render_gl.c.o
+[100/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengl/SDL_shaders_gl.c.o
+[101/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/gpu/SDL_shaders_gpu.c.o
+[102/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/gpu/SDL_pipeline_gpu.c.o
+[103/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o
+[104/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/ps2/SDL_render_ps2.c.o
+[105/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/gpu/SDL_render_gpu.c.o
+[106/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/psp/SDL_render_psp.c.o
+[107/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_drawpoint.c.o
+[108/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_drawline.c.o
+[109/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_blendpoint.c.o
+[110/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/SDL_render.c.o
+[111/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_render_sw.c.o
+[112/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/opengles2/SDL_render_gles2.c.o
+[113/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
+[114/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
+[115/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
+[116/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_rotate.c.o
+[117/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vulkan/SDL_shaders_vulkan.c.o
+[118/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_crc16.c.o
+[119/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/sensor/SDL_sensor.c.o
+[120/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_crc32.c.o
+[121/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_triangle.c.o
+[122/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_getenv.c.o
+[123/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_blendfillrect.c.o
+[124/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_iconv.c.o
+[125/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_memcpy.c.o
+[126/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_memmove.c.o
+[127/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_malloc.c.o
+[128/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_memset.c.o
+[129/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_mslibc.c.o
+[130/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_murmur3.c.o
+[131/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_random.c.o
+[132/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_stdlib.c.o
+[133/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_strtokr.c.o
+[134/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_qsort.c.o
+[135/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/storage/SDL_storage.c.o
+[136/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/SDL_thread.c.o
+[137/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/time/SDL_time.c.o
+[138/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/vulkan/SDL_render_vulkan.c.o
+[139/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/stdlib/SDL_string.c.o
+[140/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/timer/SDL_timer.c.o
+[141/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit.c.o
+[142/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_copy.c.o
+[143/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_1.c.o
+[144/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_0.c.o
+[145/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_RLEaccel.c.o
+[146/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/render/software/SDL_blendline.c.o
+[147/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_N.c.o
+[148/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_bmp.c.o
+[149/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_egl.c.o
+[150/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_fillrect.c.o
+[151/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_clipboard.c.o
+[152/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_slow.c.o
+[153/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_A.c.o
+[154/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_rect.c.o
+[155/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_stretch.c.o
+[156/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_pixels.c.o
+[157/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_video_unsupported.c.o
+[158/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.o
+[159/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/yuv2rgb/yuv_rgb_sse.c.o
+[160/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_vulkan_utils.c.o
+[161/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_surface.c.o
+[162/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/dummy/SDL_dummyaudio.c.o
+[163/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/disk/SDL_diskaudio.c.o
+[164/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/camera/dummy/SDL_camera_dummy.c.o
+[165/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_yuv.c.o
+[166/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/loadso/dlopen/SDL_sysloadso.c.o
+[167/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/dummy/SDL_nullevents.c.o
+[168/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
+[169/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/dummy/SDL_nullvideo.c.o
+[170/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/dummy/SDL_nullframebuffer.c.o
+[171/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_stb.c.o
+[172/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_video.c.o
+[173/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/yuv2rgb/yuv_rgb_std.c.o
+[174/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
+[175/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
+[176/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
+[177/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
+[178/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o
+[179/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o
+[180/1007] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[181/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o
+[182/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_shield.c.o
+[183/1007] Linking CXX static library external/fmt/libfmt.a
+[184/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
+[185/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_steam_hori.c.o
+[186/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
+[187/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
+[188/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/SDL_blit_auto.c.o
+[189/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
+[190/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
+[191/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
+[192/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
+[193/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
+[194/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/haptic/dummy/SDL_syshaptic.c.o
+[195/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
+[196/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/time/unix/SDL_systime.c.o
+[197/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/misc/ios/SDL_sysurl.m.o
+[198/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/camera/coremedia/SDL_camera_coremedia.m.o
+[199/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/main/ios/SDL_sysmain_callbacks.m.o
+[200/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/timer/unix/SDL_systimer.c.o
+[201/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/storage/generic/SDL_genericstorage.c.o
+[202/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/audio/coreaudio/SDL_coreaudio.m.o
+[203/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/filesystem/posix/SDL_sysfsops.c.o
+[204/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/hidapi/ios/hid.m.o
+[205/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/locale/macos/SDL_syslocale.m.o
+[206/1007] Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[207/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/sensor/coremotion/SDL_coremotionsensor.m.o
+[208/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/filesystem/cocoa/SDL_sysfilesystem.m.o
+[209/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/power/uikit/SDL_syspower.m.o
+[210/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitclipboard.m.o
+[211/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitmessagebox.m.o
+[212/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitappdelegate.m.o
+[213/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitevents.m.o
+[214/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/joystick/apple/SDL_mfijoystick.m.o
+[215/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitmetalview.m.o
+[216/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitopenglview.m.o
+[217/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitopengles.m.o
+[218/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitmodes.m.o
+[219/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_systhread.c.o
+[220/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_sysmutex.c.o
+[221/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_sysrwlock.c.o
+[222/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_syscond.c.o
+[223/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_systls.c.o
+[224/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/thread/pthread/SDL_syssem.c.o
+[225/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dialog/SDL_dialog.c.o
+[226/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dialog/SDL_dialog_utils.c.o
+[227/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/process/SDL_process.c.o
+[228/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/process/posix/SDL_posixprocess.c.o
+[229/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitpen.m.o
+[230/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenevents.c.o
+[231/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
+[232/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenopengles.c.o
+[233/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitvideo.m.o
+[234/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenvideo.c.o
+[235/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitview.m.o
+[236/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitviewcontroller.m.o
+[237/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenvulkan.c.o
+[238/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/video/offscreen/SDL_offscreenwindow.c.o
+[239/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/dialog/dummy/SDL_dummydialog.c.o
+[240/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/tray/dummy/SDL_tray.c.o
+[241/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/tray/SDL_tray_utils.c.o
+[242/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitwindow.m.o
+[243/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/video/uikit/SDL_uikitvulkan.m.o
+[244/1007] Linking C static library external/sdl/libSDL_uclibc.a
+[245/1007] Linking CXX static library external/dynarmic/externals/mcl/src/libmcl.a
+[246/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/a32_jitstate.cpp
+[247/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/abi.cpp
+[248/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/arm.cpp.o
+[249/1007] Linking CXX static library external/spdlog/libspdlog.a
+[250/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/address_space.cpp
+[251/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64.cpp
+[252/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a32.cpp
+[253/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a32_coprocessor.cpp
+[254/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/instrset_detect.cpp.o
+[255/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a32_memory.cpp
+[256/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a64.cpp
+[257/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_a64_memory.cpp
+[258/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_data_processing.cpp
+[259/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_cryptography.cpp
+[260/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_floating_point.cpp
+[261/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_memory.cpp
+[262/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_packed.cpp
+[263/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_saturation.cpp
+[264/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_vector.cpp
+[265/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_vector_floating_point.cpp
+[266/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/emit_arm64_vector_saturation.cpp
+[267/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/fpsr_manager.cpp
+[268/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/exclusive_monitor.cpp
+[269/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/reg_alloc.cpp
+[270/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/verbose_debugging_output.cpp
+[271/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/a32_address_space.cpp
+[272/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/common/spin_lock_arm64.cpp
+[273/1007] Generating arch_gen/Users/builder/clone/external/dynarmic/src/dynarmic/backend/arm64/a32_interface.cpp
+[274/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/tracy.cpp.o
+[275/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/gpu/metal/SDL_gpu_metal.m.o
+[276/1007] Building OBJC object external/sdl/CMakeFiles/SDL3-static.dir/src/render/metal/SDL_render_metal.m.o
+[277/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/hash.cpp.o
+[278/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/gpu/vulkan/SDL_gpu_vulkan.c.o
+[279/1007] Linking C static library external/sdl/libSDL3.a
+ranlib: warning: 'libSDL3.a(SDL_audiodev.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_keycode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_scancode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_scancode_tables.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(imKStoUCS.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_runapp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_unsupported.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_ps2.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_psp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_memory.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_tools.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_mslibc.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_egl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_lsx.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_sse.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_offscreenopengles.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_audiodev.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_keycode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_scancode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_scancode_tables.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(imKStoUCS.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_runapp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_unsupported.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_ps2.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_psp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_memory.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_tools.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_mslibc.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_egl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_lsx.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_sse.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_offscreenopengles.c.o)' has no symbols
+[280/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/vita_theme_utils.cpp.o
+[281/1007] Building CXX object vita3k/mem/CMakeFiles/mem.dir/src/allocator.cpp.o
+[282/1007] Building C object external/CMakeFiles/libatrac9.dir/LibAtrac9/C/src/band_extension.c.o
+[283/1007] Building C object external/CMakeFiles/libatrac9.dir/LibAtrac9/C/src/bit_allocation.c.o
+[284/1007] Building CXX object external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch
+FAILED: [code=1] external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch 
+/opt/homebrew/bin/ccache /usr/bin/c++ -DDYNARMIC_ENABLE_CPU_FEATURE_DETECTION=1 -DFMT_USE_USER_DEFINED_LITERALS=1 -I/Users/builder/clone/external/dynarmic/src/dynarmic/.. -I/Users/builder/clone/external/dynarmic/externals/oaknut/include -I/Users/builder/clone/external/fmt/include -I/Users/builder/clone/external/dynarmic/externals/mcl/src/../include -I/Users/builder/clone/external/dynarmic/externals/robin-map/include -isystem /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/include -O3 -DNDEBUG -std=c++20 -flto=thin -arch arm64 -isysroot /Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -miphoneos-version-min=11.0 -w -Wall -Wextra -Wcast-qual -pedantic -Wno-missing-braces -fbracket-depth=1024 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang /Users/builder/clone/build-ios/external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx -x c++-header -MD -MT external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch -MF external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch.d -o external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch -c /Users/builder/clone/build-ios/external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.cxx
+In file included from <built-in>:1:
+In file included from /Users/builder/clone/build-ios/external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx:6:
+In file included from /Users/builder/clone/external/dynarmic/src/dynarmic/ir/ir_emitter.h:11:
+In file included from /Users/builder/clone/external/dynarmic/src/dynarmic/../dynarmic/ir/basic_block.h:18:
+/Users/builder/clone/external/dynarmic/src/dynarmic/../dynarmic/ir/terminal.h:8:10: fatal error: 'boost/variant.hpp' file not found
+    8 | #include <boost/variant.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+[285/1007] Building C object external/CMakeFiles/libatrac9.dir/LibAtrac9/C/src/bit_reader.c.o
+[286/1007] Building C object external/CMakeFiles/miniz.dir/miniz/miniz.c.o
+[287/1007] Building CXX object vita3k/http/CMakeFiles/http.dir/src/http.cpp.o
+FAILED: [code=1] vita3k/http/CMakeFiles/http.dir/src/http.cpp.o 
+/opt/homebrew/bin/ccache /usr/bin/c++ -DBOOST_FILESYSTEM_NO_LIB -DBOOST_FILESYSTEM_STATIC_LINK=1 -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_NO_THREAD_ID -I/Users/builder/clone/build-ios/vita3k/config -I/Users/builder/clone/vita3k/http/include -I/Users/builder/clone/vita3k/util/include -I/Users/builder/clone/external/fmt/include -I/Users/builder/clone/external/spdlog/include -I/Users/builder/clone/vita3k/mem/include -isystem /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/include -O3 -DNDEBUG -std=c++23 -flto=thin -arch arm64 -isysroot /Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -miphoneos-version-min=11.0 -MD -MT vita3k/http/CMakeFiles/http.dir/src/http.cpp.o -MF vita3k/http/CMakeFiles/http.dir/src/http.cpp.o.d -o vita3k/http/CMakeFiles/http.dir/src/http.cpp.o -c /Users/builder/clone/vita3k/http/src/http.cpp
+In file included from /Users/builder/clone/vita3k/http/src/http.cpp:18:
+/Users/builder/clone/vita3k/http/include/http/state.h:33:10: fatal error: 'boost/algorithm/string/predicate.hpp' file not found
+   33 | #include <boost/algorithm/string/predicate.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+[288/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/fs_utils.cpp.o
+[289/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/float_to_half.cpp.o
+[290/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o
+FAILED: [code=1] vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o 
+/opt/homebrew/bin/ccache /usr/bin/c++ -DBOOST_FILESYSTEM_NO_LIB -DBOOST_FILESYSTEM_STATIC_LINK=1 -DCURL_STATICLIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_NO_THREAD_ID -I/Users/builder/clone/build-ios/vita3k/config -I/Users/builder/clone/vita3k/util/include -I/Users/builder/clone/external/fmt/include -I/Users/builder/clone/external/spdlog/include -I/Users/builder/clone/vita3k/http/include -I/Users/builder/clone/vita3k/mem/include -I/Users/builder/clone/build-ios/external/sdl/include-revision -I/Users/builder/clone/external/sdl/include -isystem /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/include -O3 -DNDEBUG -std=c++23 -flto=thin -arch arm64 -isysroot /Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -miphoneos-version-min=11.0 -MD -MT vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o -MF vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o.d -o vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o -c /Users/builder/clone/vita3k/util/src/net_utils.cpp
+In file included from /Users/builder/clone/vita3k/util/src/net_utils.cpp:19:
+In file included from /Users/builder/clone/vita3k/util/include/util/net_utils.h:3:
+/Users/builder/clone/vita3k/http/include/http/state.h:33:10: fatal error: 'boost/algorithm/string/predicate.hpp' file not found
+   33 | #include <boost/algorithm/string/predicate.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+[291/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/logging.cpp.o
+[292/1007] Building CXX object vita3k/mem/CMakeFiles/mem.dir/src/mem.cpp.o
+[293/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/string_utils.cpp.o
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:31:31: warning: 'codecvt_utf8<wchar_t>' is deprecated [-Wdeprecated-declarations]
+   31 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:199:7: note: 'codecvt_utf8<wchar_t>' has been explicitly marked deprecated here
+  199 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8 : public __codecvt_utf8<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:31:10: warning: 'wstring_convert<std::codecvt_utf8<wchar_t>>' is deprecated [-Wdeprecated-declarations]
+   31 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8<wchar_t>>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:36:31: warning: 'codecvt_utf8<wchar_t>' is deprecated [-Wdeprecated-declarations]
+   36 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:199:7: note: 'codecvt_utf8<wchar_t>' has been explicitly marked deprecated here
+  199 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8 : public __codecvt_utf8<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:36:10: warning: 'wstring_convert<std::codecvt_utf8<wchar_t>>' is deprecated [-Wdeprecated-declarations]
+   36 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8<wchar_t>>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:114:31: warning: 'codecvt_utf8_utf16<char16_t>' is deprecated [-Wdeprecated-declarations]
+  114 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:573:7: note: 'codecvt_utf8_utf16<char16_t>' has been explicitly marked deprecated here
+  573 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8_utf16 : public __codecvt_utf8_utf16<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:114:10: warning: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' is deprecated [-Wdeprecated-declarations]
+  114 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:119:31: warning: 'codecvt_utf8_utf16<char16_t>' is deprecated [-Wdeprecated-declarations]
+  119 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:573:7: note: 'codecvt_utf8_utf16<char16_t>' has been explicitly marked deprecated here
+  573 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8_utf16 : public __codecvt_utf8_utf16<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:119:10: warning: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' is deprecated [-Wdeprecated-declarations]
+  119 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+8 warnings generated.
+ninja: build stopped: subcommand failed.
 
-    src/android_driver.cpp
-Call Stack (most recent call first):
-  vita3k/util/CMakeLists.txt:1 (add_library)
 
+Build failed :|
+Step 7 script `Build iOS App` exited with status code 1
+[278/1007] Building C object external/sdl/CMakeFiles/SDL3-static.dir/src/gpu/vulkan/SDL_gpu_vulkan.c.o
+[279/1007] Linking C static library external/sdl/libSDL3.a
+ranlib: warning: 'libSDL3.a(SDL_audiodev.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_keycode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_scancode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_scancode_tables.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(imKStoUCS.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_runapp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_unsupported.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_ps2.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_psp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_memory.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_tools.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_mslibc.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_egl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_lsx.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_sse.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_offscreenopengles.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_audiodev.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_keycode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_keysym_to_scancode.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_scancode_tables.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(imKStoUCS.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_runapp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_unsupported.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d11.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_d3d12.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_shaders_gl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_ps2.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_psp.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_memory.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_render_vita_gxm_tools.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_mslibc.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_egl.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_lsx.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(yuv_rgb_sse.c.o)' has no symbols
+ranlib: warning: 'libSDL3.a(SDL_offscreenopengles.c.o)' has no symbols
+[280/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/vita_theme_utils.cpp.o
+[281/1007] Building CXX object vita3k/mem/CMakeFiles/mem.dir/src/allocator.cpp.o
+[282/1007] Building C object external/CMakeFiles/libatrac9.dir/LibAtrac9/C/src/band_extension.c.o
+[283/1007] Building C object external/CMakeFiles/libatrac9.dir/LibAtrac9/C/src/bit_allocation.c.o
+[284/1007] Building CXX object external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch
+FAILED: [code=1] external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch 
+/opt/homebrew/bin/ccache /usr/bin/c++ -DDYNARMIC_ENABLE_CPU_FEATURE_DETECTION=1 -DFMT_USE_USER_DEFINED_LITERALS=1 -I/Users/builder/clone/external/dynarmic/src/dynarmic/.. -I/Users/builder/clone/external/dynarmic/externals/oaknut/include -I/Users/builder/clone/external/fmt/include -I/Users/builder/clone/external/dynarmic/externals/mcl/src/../include -I/Users/builder/clone/external/dynarmic/externals/robin-map/include -isystem /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/include -O3 -DNDEBUG -std=c++20 -flto=thin -arch arm64 -isysroot /Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -miphoneos-version-min=11.0 -w -Wall -Wextra -Wcast-qual -pedantic -Wno-missing-braces -fbracket-depth=1024 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang /Users/builder/clone/build-ios/external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx -x c++-header -MD -MT external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch -MF external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch.d -o external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.pch -c /Users/builder/clone/build-ios/external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx.cxx
+In file included from <built-in>:1:
+In file included from /Users/builder/clone/build-ios/external/dynarmic/src/dynarmic/CMakeFiles/dynarmic.dir/cmake_pch.hxx:6:
+In file included from /Users/builder/clone/external/dynarmic/src/dynarmic/ir/ir_emitter.h:11:
+In file included from /Users/builder/clone/external/dynarmic/src/dynarmic/../dynarmic/ir/basic_block.h:18:
+/Users/builder/clone/external/dynarmic/src/dynarmic/../dynarmic/ir/terminal.h:8:10: fatal error: 'boost/variant.hpp' file not found
+    8 | #include <boost/variant.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+[285/1007] Building C object external/CMakeFiles/libatrac9.dir/LibAtrac9/C/src/bit_reader.c.o
+[286/1007] Building C object external/CMakeFiles/miniz.dir/miniz/miniz.c.o
+[287/1007] Building CXX object vita3k/http/CMakeFiles/http.dir/src/http.cpp.o
+FAILED: [code=1] vita3k/http/CMakeFiles/http.dir/src/http.cpp.o 
+/opt/homebrew/bin/ccache /usr/bin/c++ -DBOOST_FILESYSTEM_NO_LIB -DBOOST_FILESYSTEM_STATIC_LINK=1 -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_NO_THREAD_ID -I/Users/builder/clone/build-ios/vita3k/config -I/Users/builder/clone/vita3k/http/include -I/Users/builder/clone/vita3k/util/include -I/Users/builder/clone/external/fmt/include -I/Users/builder/clone/external/spdlog/include -I/Users/builder/clone/vita3k/mem/include -isystem /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/include -O3 -DNDEBUG -std=c++23 -flto=thin -arch arm64 -isysroot /Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -miphoneos-version-min=11.0 -MD -MT vita3k/http/CMakeFiles/http.dir/src/http.cpp.o -MF vita3k/http/CMakeFiles/http.dir/src/http.cpp.o.d -o vita3k/http/CMakeFiles/http.dir/src/http.cpp.o -c /Users/builder/clone/vita3k/http/src/http.cpp
+In file included from /Users/builder/clone/vita3k/http/src/http.cpp:18:
+/Users/builder/clone/vita3k/http/include/http/state.h:33:10: fatal error: 'boost/algorithm/string/predicate.hpp' file not found
+   33 | #include <boost/algorithm/string/predicate.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+[288/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/fs_utils.cpp.o
+[289/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/float_to_half.cpp.o
+[290/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o
+FAILED: [code=1] vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o 
+/opt/homebrew/bin/ccache /usr/bin/c++ -DBOOST_FILESYSTEM_NO_LIB -DBOOST_FILESYSTEM_STATIC_LINK=1 -DCURL_STATICLIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_NO_THREAD_ID -I/Users/builder/clone/build-ios/vita3k/config -I/Users/builder/clone/vita3k/util/include -I/Users/builder/clone/external/fmt/include -I/Users/builder/clone/external/spdlog/include -I/Users/builder/clone/vita3k/http/include -I/Users/builder/clone/vita3k/mem/include -I/Users/builder/clone/build-ios/external/sdl/include-revision -I/Users/builder/clone/external/sdl/include -isystem /Users/builder/clone/build-ios/vcpkg_installed/arm64-ios/include -O3 -DNDEBUG -std=c++23 -flto=thin -arch arm64 -isysroot /Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -miphoneos-version-min=11.0 -MD -MT vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o -MF vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o.d -o vita3k/util/CMakeFiles/util.dir/src/net_utils.cpp.o -c /Users/builder/clone/vita3k/util/src/net_utils.cpp
+In file included from /Users/builder/clone/vita3k/util/src/net_utils.cpp:19:
+In file included from /Users/builder/clone/vita3k/util/include/util/net_utils.h:3:
+/Users/builder/clone/vita3k/http/include/http/state.h:33:10: fatal error: 'boost/algorithm/string/predicate.hpp' file not found
+   33 | #include <boost/algorithm/string/predicate.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+[291/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/logging.cpp.o
+[292/1007] Building CXX object vita3k/mem/CMakeFiles/mem.dir/src/mem.cpp.o
+[293/1007] Building CXX object vita3k/util/CMakeFiles/util.dir/src/string_utils.cpp.o
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:31:31: warning: 'codecvt_utf8<wchar_t>' is deprecated [-Wdeprecated-declarations]
+   31 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:199:7: note: 'codecvt_utf8<wchar_t>' has been explicitly marked deprecated here
+  199 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8 : public __codecvt_utf8<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:31:10: warning: 'wstring_convert<std::codecvt_utf8<wchar_t>>' is deprecated [-Wdeprecated-declarations]
+   31 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8<wchar_t>>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:36:31: warning: 'codecvt_utf8<wchar_t>' is deprecated [-Wdeprecated-declarations]
+   36 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:199:7: note: 'codecvt_utf8<wchar_t>' has been explicitly marked deprecated here
+  199 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8 : public __codecvt_utf8<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:36:10: warning: 'wstring_convert<std::codecvt_utf8<wchar_t>>' is deprecated [-Wdeprecated-declarations]
+   36 |     std::wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8<wchar_t>>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:114:31: warning: 'codecvt_utf8_utf16<char16_t>' is deprecated [-Wdeprecated-declarations]
+  114 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:573:7: note: 'codecvt_utf8_utf16<char16_t>' has been explicitly marked deprecated here
+  573 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8_utf16 : public __codecvt_utf8_utf16<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:114:10: warning: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' is deprecated [-Wdeprecated-declarations]
+  114 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:119:31: warning: 'codecvt_utf8_utf16<char16_t>' is deprecated [-Wdeprecated-declarations]
+  119 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |                               ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/codecvt:573:7: note: 'codecvt_utf8_utf16<char16_t>' has been explicitly marked deprecated here
+  573 | class _LIBCPP_DEPRECATED_IN_CXX17 codecvt_utf8_utf16 : public __codecvt_utf8_utf16<_Elem> {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/builder/clone/vita3k/util/src/string_utils.cpp:119:10: warning: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' is deprecated [-Wdeprecated-declarations]
+  119 |     std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> myconv;
+      |          ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:34:7: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+   34 | class _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |       ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:581:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  581 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode-26.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk/usr/include/c++/v1/__config:554:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  554 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+8 warnings generated.
+ninja: build stopped: subcommand failed.
 
-CMake Error at vcpkg/scripts/buildsystems/vcpkg.cmake:666 (_add_library):
-  No SOURCES given to target: util
-Call Stack (most recent call first):
-  vita3k/util/CMakeLists.txt:1 (add_library)

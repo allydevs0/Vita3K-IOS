@@ -44,11 +44,15 @@ workflows:
             -DCMAKE_OSX_DEPLOYMENT_TARGET=14.0 \
             -DVITA3K_BUILD_IOS=ON \
             -DUSE_UNICORN_CPU=OFF \
-            -DVITA3K_FORCE_SYSTEM_BOOST=ON
+            -DVITA3K_FORCE_SYSTEM_BOOST=ON \
+            -DCMAKE_CXX_FLAGS="-Wno-deprecated-declarations"
       - name: Build iOS App
         script: |
           cd build-ios
-          cmake --build . --config Release --target vita3k
+          cmake --build . --config Release --target vita3k -- -j$(sysctl -n hw.logicalcpu) 2>&1 | tee build.log
+          BUILD_EXIT=${PIPESTATUS[0]}
+          tail -n 100 build.log > ../error.txt
+          exit $BUILD_EXIT
       - name: Prepare App Bundle
         script: |
           mkdir -p artifacts/ios-app
@@ -60,3 +64,5 @@ workflows:
       - artifacts/vita3k-ios-app.zip
       - build-ios/CMakeFiles/CMakeError.log
       - build-ios/CMakeFiles/CMakeOutput.log
+      - build-ios/build.log
+      - error.txt
