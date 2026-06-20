@@ -52,7 +52,7 @@ jobs:
             -DCMAKE_SYSTEM_NAME=iOS \
             -DCMAKE_OSX_DEPLOYMENT_TARGET=14.0 \
             -DVITA3K_BUILD_IOS=ON \
-            -DUSE_UNICORN_CPU=ON \
+            -DUSE_UNICORN_CPU=OFF \
             -DVITA3K_FORCE_SYSTEM_BOOST=ON
             
       - name: Build iOS App
